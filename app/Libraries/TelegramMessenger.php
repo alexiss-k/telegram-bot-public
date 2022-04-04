@@ -62,7 +62,7 @@ class TelegramMessenger {
 		}
 	}
 
-	public staticfunction parseIncommingRequest($request) {
+	public static function parseIncommingRequest($request) {
 		if (!empty($request['callback_query'])) {
 			return [
 				'chat_id' => 'chat-' . $request['callback_query']['message']['chat']['id'],
